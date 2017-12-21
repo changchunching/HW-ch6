@@ -56,14 +56,14 @@ public class FirstAdapter extends BaseAdapter {
         ImageView nav_custom_image=(ImageView) row.findViewById(R.id.product_image);
         nav_custom_text.setText(socialSites[position]);
         nav_custom_image.setImageResource(R.drawable.product);
-        /*Button buy = (Button)row.findViewById(R.id.buy);
+        Button buy = (Button)row.findViewById(R.id.buy);
         buy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(first_custom_row.this,"已加入購物車",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.class,"已加入購物車",Toast.LENGTH_SHORT).show();
             }
-        });*/
+        });
         return row;
     }
 }
